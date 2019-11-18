@@ -1,4 +1,4 @@
-## PolarFire Evaluation Kit RISC-V Designs
+## Arrow-Everest-Board RISC-V Designs
 
 Sample Mi-V Libero projects for the Arrow Everest Board (MPF300)
 
