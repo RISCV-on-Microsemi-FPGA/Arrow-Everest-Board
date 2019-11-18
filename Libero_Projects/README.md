@@ -1,6 +1,6 @@
 ## Arrow-Everest-Board RISC-V Designs for Libero v12.1
 
-Sample Mi-V Libero projects for the Arrow Everest Board (MPF300T_ES)
+Sample Mi-V Libero projects for the Arrow Everest Board (MPF300)
 
 To get your design download or clone this repository. The files consist of .tcl script files that are to be executed in Libero to build the design, the import folder contatining supporting files for building and the programming file which can be used to directly program hardware. Follow the instructions below to build your design in Libero, alternatively program your target device using the default programming files provided, see FlashPro Express Project's folder.
 
