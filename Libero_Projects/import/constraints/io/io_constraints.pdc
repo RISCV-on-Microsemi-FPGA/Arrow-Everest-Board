@@ -28,16 +28,17 @@ set_io -port_name {GPIO_IN[1]}  \
     -DIRECTION INPUT
 
 
-set_io -port_name {GPIO_IN[2]}  \
-    -pin_name V8                 \
-    -fixed true                  \
-    -DIRECTION INPUT
+# Additional GPIOs
+# set_io -port_name {GPIO_IN[2]}  \
+    # -pin_name V8                 \
+    # -fixed true                  \
+    # -DIRECTION INPUT
 
 
-set_io -port_name {GPIO_IN[3]}  \
-    -pin_name W10                 \
-    -fixed true                  \
-    -DIRECTION INPUT
+# set_io -port_name {GPIO_IN[3]}  \
+    # -pin_name W10                 \
+    # -fixed true                  \
+    # -DIRECTION INPUT
 
 
 set_io -port_name {GPIO_OUT[0]}  \
@@ -76,28 +77,29 @@ set_io -port_name TX   \
     -DIRECTION OUTPUT
 
 
-set_io -port_name SPISCLKO        \
-    -pin_name AF22       \
-	-fixed true       \
-    -DIRECTION OUTPUT
+# Additional Constraints
+# set_io -port_name SPISCLKO        \
+    # -pin_name AF22       \
+	# -fixed true       \
+    # -DIRECTION OUTPUT
 
 
-set_io -port_name SPISDI         \
-    -pin_name AE22      \
-    -fixed true       \
-    -DIRECTION INPUT
+# set_io -port_name SPISDI         \
+    # -pin_name AE22      \
+    # -fixed true       \
+    # -DIRECTION INPUT
 
 
-set_io -port_name SPISDO          \
-    -pin_name AF25        \
-    -fixed true       \
-    -DIRECTION OUTPUT
+# set_io -port_name SPISDO          \
+    # -pin_name AF25        \
+    # -fixed true       \
+    # -DIRECTION OUTPUT
 
 
-set_io -port_name SPISS           \
-    -pin_name AD24        \
-    -fixed true       \
-    -DIRECTION OUTPUT
+# set_io -port_name SPISS           \
+    # -pin_name AD24        \
+    # -fixed true       \
+    # -DIRECTION OUTPUT
 	
 	
 # 
