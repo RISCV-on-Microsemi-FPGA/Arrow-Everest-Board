@@ -1,7 +1,6 @@
-set project_folder_name MiV_AHB_PF_Everest_ES
+set project_folder_name MiV_AHB_BD
 set project_dir2 "./$project_folder_name"
-set Libero_project_name MiV_AHB_BaseDesign
-    
+
 puts "-------------------------------------------------------------------------"
 puts "-----------------------IMPORTING COMPONENTS------------------------------"
 puts "-------------------------------------------------------------------------"
@@ -28,12 +27,12 @@ organize_tool_files -tool {PLACEROUTE} \
 
 organize_tool_files -tool {SYNTHESIZE} \
 	-file $project_dir2/constraint/io_jtag_constraints.sdc \
-    -module {BaseDesign::work} -input_type {constraint}    
-    
+    -module {BaseDesign::work} -input_type {constraint}
+
 organize_tool_files -tool {VERIFYTIMING} \
 	-file $project_dir2/constraint/io_jtag_constraints.sdc \
     -module {BaseDesign::work} -input_type {constraint}
-	
+
 set_root BaseDesign
 run_tool -name {CONSTRAINT_MANAGEMENT}
-derive_constraints_sdc 
+derive_constraints_sdc
