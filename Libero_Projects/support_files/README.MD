@@ -1,1 +1,0 @@
-## Support files for Arrow-Everest-Board RISC-V Designs
