@@ -11,76 +11,61 @@
 # 
 
 
-set_io -port_name {GPIO_IN[0]}  \
+# -- User PushButtons I/O -- #
+
+set_io -port_name {PUSH_BTN_1}  \
     -pin_name T4                \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION INPUT
 
-
-set_io -port_name {GPIO_IN[1]}  \
+set_io -port_name {PUSH_BTN_2}  \
     -pin_name Y8                 \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION INPUT
+	
+set_io -port_name {USER_RST}  \
+    -pin_name T3                 \
+    -fixed true                  \
+    -io_std LVCMOS33        \
+    -DIRECTION INPUT  
 
 
-# Additional GPIOs
-# set_io -port_name {GPIO_IN[2]}  \
-    # -pin_name V8                 \
-    # -fixed true                  \
-    #-io_std LVCMOS33        \
-    # -DIRECTION INPUT
+# -- LEDs I/O --#
 
-
-# set_io -port_name {GPIO_IN[3]}  \
-    # -pin_name W10                 \
-    # -fixed true                  \
-    #-io_std LVCMOS33        \
-    # -DIRECTION INPUT
-
-
-set_io -port_name {GPIO_OUT[0]}  \
+set_io -port_name {LED_1}  \
     -pin_name U11                 \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION OUTPUT
 
-
-set_io -port_name {GPIO_OUT[1]}  \
+set_io -port_name {LED_2}  \
     -pin_name T5                 \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION OUTPUT
 
-
-set_io -port_name {GPIO_OUT[2]}  \
+set_io -port_name {LED_3}  \
     -pin_name W8                 \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION OUTPUT
 
-
-set_io -port_name {GPIO_OUT[3]}  \
+set_io -port_name {LED_4}  \
     -pin_name W9                 \
     -fixed true                  \
     -io_std LVCMOS33        \
     -DIRECTION OUTPUT
+  
 
-
-set_io -port_name {USER_RST}  \
-    -pin_name T3                 \
-    -fixed true                  \
-    -io_std LVCMOS33        \
-    -DIRECTION INPUT    
-    
+# -- UART RX/TX -- #
     
 set_io -port_name RX  \
     -pin_name U7            \
     -fixed true             \
     -io_std LVCMOS33        \
     -DIRECTION INPUT
-
 
 set_io -port_name TX  \
     -pin_name V9            \
@@ -107,22 +92,33 @@ set_io -port_name TX  \
     -pin_name J10       \
     -DIRECTION INPUT
 
-
 #set_io -port_name TDI  \
     -pin_name K11       \
     -DIRECTION INPUT
-
 
 #set_io -port_name TDO  \
     -pin_name K9       \
     -DIRECTION OUTPUT
 
-
 #set_io -port_name TMS  \
     -pin_name J9       \
     -DIRECTION INPUT
 
-
 #set_io -port_name TRSTB  \
     -pin_name N14         \
     -DIRECTION INPUT
+
+
+# Additional GPIOs IN
+
+# set_io -port_name {GPIO_IN[2]}  \
+    # -pin_name V8                 \
+    # -fixed true                  \
+    #-io_std LVCMOS33        \
+    # -DIRECTION INPUT
+
+# set_io -port_name {GPIO_IN[3]}  \
+    # -pin_name W10                 \
+    # -fixed true                  \
+    #-io_std LVCMOS33        \
+    # -DIRECTION INPUT
