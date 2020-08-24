@@ -1,6 +1,6 @@
 # Arrow Everest Board FPGA Programming Files
 
-This folder contains FlashPro Express v12.4 projects for the Arrow Everest Board Mi-V sample designs.
+This folder contains FlashPro Express v12.5 projects for the Arrow Everest Board Mi-V sample designs.
 
 ## FlashPro Express
 The programming files contained under this folder were exported from the designs in the Libero_Projects folder in this repository. Select the desired programming file (.job) and program your device using FlashPro Express.
