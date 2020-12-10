@@ -133,6 +133,7 @@ if {"$config" == "CFG1"} then {
 	}
 }
 
+select_profile -name {Synplify Pro Q2020MSP1}  
 
 if {"$design_flow_stage" == "SYNTHESIZE"} then {
 	puts "\n---------------------------------------------------------------------------------------------------------"
